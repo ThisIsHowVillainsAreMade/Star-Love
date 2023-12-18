@@ -1,0 +1,12 @@
+/* General */
+
+@font-face {
+  font-family: Starjedi;
+  src: url(./assets/starjedi/Starjedi.ttf);
+}
+
+* {
+  font-family: 'Starjedi';
+  font-size: 2rem;
+  cursor: url("DuckWars/public/sabrebleu.png");
+}
