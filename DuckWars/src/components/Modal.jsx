@@ -1,29 +1,32 @@
 import '../CSS/Modal.css'
 
-const Modal = ({ displayModal, closeModal, image }) => {
+
+
+const Modal = ({ displayModal, closeModal, image, text }) => {
   const divStyle = {
-    display: displayModal ? "flex" : "none",
+    display: displayModal ? 'block' : 'none',
   };
+//   vérifie la valeur de modale
 
   const handleCloseModal = () => {
     closeModal();
   };
-  const handleModalClick = (e) => {
-    e.stopPropagation(); 
-  };
+  //ferme le modale
 
   const handleCloseButtonClick = (e) => {
-    e.stopPropagation(); 
-    handleCloseModal(); 
+    e.stopPropagation();
+    handleCloseModal();
   };
+  //idem mais sur le bouton fermeture + empeche la propagation du clic sur le bouton fermé + appel de la fonction
 
   return (
     <div className="modal" onClick={handleCloseModal} style={divStyle}>
-      <div className="modal-content" onClick={handleModalClick}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <span className="close" onClick={handleCloseButtonClick}>
           &times;
         </span>
-        <img src={image} />
+        <img src={image} alt="Modal Content" />
+        <p>{text}</p>
       </div>
     </div>
   );
@@ -31,26 +34,3 @@ const Modal = ({ displayModal, closeModal, image }) => {
 
 export default Modal;
 
-
-// function App() {
-
-//     const [isModalOpen, setIsModalOpen] = useState(false);
-  
-//     const openModal = () => {
-//       setIsModalOpen(true);
-//     };
-  
-//     const closeModal = () => {
-//       setIsModalOpen(false);
-//     };
-//     return (
-//       <div>
-//         <RouterProvider router={router} />
-//         <img
-//       src=''
-//       onClick={openModal}
-//     />
-//         <Modal displayModal={isModalOpen} closeModal={closeModal} image='' />
-//       </div>
-//     );
-//   }
