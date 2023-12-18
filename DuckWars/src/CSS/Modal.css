@@ -1,0 +1,25 @@
+
+    .modal {
+      display: flex;
+      border: 2px solid #000;
+      width: 80%;
+      height: auto;
+      justify-content: center;
+    
+      }
+  
+  /* Contenu de la modal */
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items:self-end;
+    flex-direction: row-reverse;
+    
+  }
+  
+  /* Bouton de fermeture */
+  .close {
+    display: flex;
+    justify-content: end;
+
+  }  
