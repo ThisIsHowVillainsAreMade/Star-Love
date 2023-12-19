@@ -2,7 +2,17 @@
 
 .aboutUsDiv {
   background-color: #0d011b;
+  scrollbar-width: none;
+  /* opacity: 0.5; */
 }
+
+.aboutUsDiv::-webkit-scrollbar {
+  display: none;
+}
+
+/* .aboutUsDiv:hover {
+  opacity: 1;
+} */
 
 /*  BRUIT - FACULTATIF */
 
@@ -30,6 +40,7 @@
   justify-content: center;
   margin-top: -1%;
   padding-top: 5%;
+  margin-bottom: 5%;
   color: white;
   /* Jaune Star Wars */
   /* text-shadow: #ffc500 1px 0 50px; */
@@ -57,9 +68,10 @@
 #cedricPic,
 #romainPic,
 #yohanPic {
-  margin: 10px;
-  height: 500px;
-  font-weight: 500px;
+  /* margin: 10px; */
+  margin: 20% 0% 0% 5%;
+  height: 17svh;
+  font-weight: 20svw;
   border: solid 5px #ffc500;
   border-radius: 250px;
 }
@@ -68,10 +80,10 @@
   display: flex;
   flex-direction: row;
   margin: 2%;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   z-index: 2;
-  top: -50%;
+  top: -15%;
 }
 
 .cointainer {
@@ -87,6 +99,7 @@
   -moz-box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
   transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out,
     box-shadow 0.25s ease-in-out;
+  height: 30svh;
 }
 
 .cointainer:hover {
@@ -99,22 +112,33 @@
 }
 
 .cointainer p {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   width: 20svw;
-  margin: 1%;
-  max-height: 15svh;
+  margin: 1% 5% 1% 5%;
+  text-align: justify;
 }
 
 .descriptionWanted {
   display: flex;
   flex-direction: column;
   padding-top: 5%;
+  padding-bottom: 10%;
   gap: 5%;
   margin-right: 2svw;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.descriptionWanted::-webkit-scrollbar {
+  display: none;
+}
+
+.descriptionWanted p {
+  max-width: 90%;
 }
 
 .nameColor {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: white;
   text-shadow: #ff0000 1px 0 50px;
 }
@@ -124,7 +148,7 @@
 }
 
 .redColor {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #ca0d0d;
 }
 
