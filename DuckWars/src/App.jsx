@@ -2,6 +2,7 @@ import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Age from './components/Age';
 import BackgroundMusic from './components/BackgroundMusic';
+import HotWookie from './components/HotWookie'
 
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
