@@ -2,6 +2,10 @@
     min-height: 100svh;
     background: url(../assets/background1.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #choose {
@@ -30,6 +34,7 @@
     display: flex;
     justify-content: space-around;
     height: 55svh;
+    width: 100%;
 }
 
 #heroesContainer {
@@ -95,6 +100,14 @@
     font-size: 0.6rem;
     color: white;
     -webkit-text-stroke: 1px #0d1925;
+}
+
+
+#buttonHeroes {
+    background-color: #334e6973;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
 }
 
 @media screen and (max-width:1200px) {

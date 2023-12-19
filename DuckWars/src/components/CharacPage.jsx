@@ -2,6 +2,7 @@ import '../CSS/CharacPage.css'
 import CharactSelection from './CharactSelection';
 import CharactInfos from './CharactInfos';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,7 +20,7 @@ function CharacPage () {
       setSelectedHero(hero);
     };
     return (
-        <div id='CharacPage'>
+      <div id='CharacPage'>
         <h1 id='choose'>choisis ton personnage</h1>
         <div id="CharacContainer">
           <div id='heroesContainer'>
@@ -31,8 +32,13 @@ function CharacPage () {
             {selectedHero && <CharactInfos stat={selectedHero} />}
           </div>
         </div>
+        {selectedHero && (
+          <Link to="/intro">
+            <button id='buttonHeroes'>valider</button>
+          </Link>
+        )}
       </div>
-    )
+    );
 }
 
 
