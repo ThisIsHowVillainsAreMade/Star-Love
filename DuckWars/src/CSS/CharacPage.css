@@ -1,0 +1,127 @@
+#CharacPage {
+    min-height: 100svh;
+    background: url(../assets/background1.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#choose {
+    text-align: center;
+    padding: 5%;
+    animation-duration: 3s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+}
+
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#CharacContainer {
+    display: flex;
+    justify-content: space-around;
+    height: 55svh;
+    width: 100%;
+}
+
+#heroesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+}
+
+#charactSelection {
+    height: 15%;
+    background-color: #334e6973;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.miniature {
+    width: 70px;
+    background-color: #0d1925;
+    border-radius: 10px;
+}
+
+.characters {
+    width: 80%;
+    font-size: 0.7rem;
+    text-transform: lowercase;
+    -webkit-text-stroke: 1px #0d1925;
+}
+
+
+.charactInfos {
+    width: 450px;
+    height: 45%;
+    background-color: #334e6973;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.charImg {
+    height: 100%;
+    border-radius: 10px;
+}
+
+#infosContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#cardInfos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+#cardInfos p {
+    font-size: 0.6rem;
+    color: white;
+    -webkit-text-stroke: 1px #0d1925;
+}
+
+
+#buttonHeroes {
+    background-color: #334e6973;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+    .miniature {
+        display: none;
+    }
+
+    .characters {
+        width: 100%;
+    }
+
+    #choose {
+        font-size: 1.3rem;
+    }
+
+
+}
