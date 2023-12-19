@@ -1,4 +1,5 @@
 import './App.css'
+import Cantina from './components/Cantina'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Age from './components/Age';
 import BackgroundMusic from './components/BackgroundMusic';
@@ -32,7 +33,9 @@ console.log(`
     ⠤⠤⠤⢶⣿⣿⣿⣿⡿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠠⠞⠋⣥⠞⠽⠋⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
+
 const router = createBrowserRouter([
+
   {
     path: '/',
     element: <div><Age/></div>
@@ -47,12 +50,16 @@ const router = createBrowserRouter([
   },
   {
     path: '/Bar',
-    element: <div>Page d'interraction</div>
+    element: <div><Cantina /></div>
   },
 ])
 
 function App() {
+
+  </>
+
   return <RouterProvider router={router} />
+
 }
 
 
