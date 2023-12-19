@@ -1,16 +1,16 @@
-function CharactInfos () {
+function CharactInfos ({stat}) {
 
 
     return (
         <div id='infosContainer'>
-        <img src={tooMuchHeroes[0].image} alt="Hero" className='charImg'/>
-        <div id='cardInfos'>
-            <p>name: {tooMuchHeroes[0].name}</p>
-            <p>gender: {tooMuchHeroes[0].gender}</p>
-            <p>taille: {tooMuchHeroes[0].height}m</p>
-            <p>species: {tooMuchHeroes[0].species}</p>
+            <img src={stat.image} alt="Hero" className='charImg'/>
+            <div id='cardInfos'>
+                <p>name: {stat.name}</p>
+                <p>gender: {stat.gender}</p>
+                <p>taille: {stat.height}m</p>
+                <p>species: {stat.species}</p>
+            </div>
         </div>
-    </div>
     )
 }
 

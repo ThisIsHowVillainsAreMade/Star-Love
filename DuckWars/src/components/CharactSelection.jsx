@@ -1,11 +1,7 @@
-function CharactSelection ({character}) {
-    function handleClick() {
-        console.log('✨ Ceci est un clic ✨')
-        console.log(character.id);
-    }
+function CharactSelection ({character , onClick}) {
 
     return (
-        <div id="charactSelection" onClick={handleClick}>
+        <div id="charactSelection" onClick={() => onClick(character)}>
             <div className='miniature'></div>
             <div className='characters'>{character.name}</div>
         </div>
