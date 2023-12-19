@@ -26,14 +26,13 @@ const Modal = ({ displayModal, closeModal, image, text }) => {
           &times;
           {/*au clique déclenche la fonction handleCloseButtonClick  donc la fermeture */}
         </span>
-        <img src={image} alt="Modal Content" />
+        {/* <img src={image} alt="Modal Content" /> */}
         <div>{text}</div>
         {/* affichage du text et de l'image dans la modal */}
       </div>
     </div>
   );
 };
-
 export default Modal;
 
 // import './App.css'

@@ -54,12 +54,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/Bar",
-    element: <div>Page d'interraction</div>,
-    // <TableauDeChasse />,
+    // element:    <modal text={<Armory/>}
+                // <modal text={<drogue/>}
+                // <modal text={<wookie/>}
+                // <modal text= {<radio/>}
+                // <modal text={<alcool/>}
   },
   {
     path: "/Test",
-    element: <Modal text={<TableauDeChasse />} />,
+    element: <Modal text={<TableauDeChasse />} 
+    
+    />,
   },
 ]);
 
@@ -76,19 +81,64 @@ function App() {
 
   return (
     <>
-      {" "}
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
       <div>
-        <button onClick={openModal} />
+        <img src='https://www.pokepedia.fr/images/thumb/8/89/Salam%C3%A8che-RFVF.png/530px-Salam%C3%A8che-RFVF.png?20141019213025' onClick={openModal} />
+        
         <Modal
           displayModal={isModalOpen}
           closeModal={closeModal}
           text={<TableauDeChasse />}
         />
       </div>
-      ;
+      {/* <div>
+        <img src='arme'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<Armory />}
+        />
+      </div> */}
+        {/* <div>
+        <img src='drogue'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<DuckDrogs/>}
+        />
+      </div> */}
+              {/* <div>
+        <img src='string'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<rencontrewookie />}
+        />
+      </div> */}
+      {/* <div>
+        <img src='alcool'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<bouteille sur le bar />}
+        />
+      </div> */}
+            {/* <div>
+        <img src='radio'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<Radio />}
+        />
+      </div> */}
+
     </>
-  );
+  )
 }
 
 export default App;
