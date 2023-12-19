@@ -1,25 +1,27 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    .modal {
-      display: flex;
-      border: 2px solid #000;
-      width: 80%;
-      height: auto;
-      justify-content: center;
-    
-      }
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
   
   /* Contenu de la modal */
   .modal-content {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items:self-end;
-    flex-direction: row-reverse;
     
   }
   
   /* Bouton de fermeture */
   .close {
-    display: flex;
-    justify-content: end;
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
   }  
