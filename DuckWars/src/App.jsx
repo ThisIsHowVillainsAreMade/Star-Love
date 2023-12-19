@@ -1,5 +1,5 @@
 import './App.css'
-import Cantina from './ components/Cantina.jsx'
+import Cantina from './components/Cantina'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
@@ -47,14 +47,14 @@ const router = createBrowserRouter ([
   },
   {
     path: '/Bar',
-    element: <div>Page d'interraction</div>
+    element: <div><Cantina /></div>
   },
 ])
 
 function App() {
 
   return <> <RouterProvider router={router}/>
-            <Cantina />
+
   </>
 }
 
