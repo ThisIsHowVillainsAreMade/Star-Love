@@ -6,6 +6,10 @@ import BackgroundMusic from './components/BackgroundMusic';
 import CharacPage from './components/characPage';
 import AccueilText from './components/AccueilText.jsx'
 import Hyperspace from './components/Hyperspace.jsx'
+import { useState } from "react";
+import Modal from "./components/Modal";
+
+
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣽⣧⣞⡤
@@ -57,14 +61,63 @@ const router = createBrowserRouter ([
   },
   {
     path: '/Bar',
-    element: <div><Cantina /></div>
+    element: <div>
+      <Cantina />
+     <Modal text={<Armory/>} />
+     <Modal text={<HotWookie/>} />
+     <Modal text={<TableauDeChasse/>}/>
+
+    </div>
+
   },
 ])
 
 function App() {
 
-  return <RouterProvider router={router} />
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  return (
+    <>
+      <RouterProvider router={router} />
+      <div>
+        <img src='public\wanted-screen.png' onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<TableauDeChasse />}
+        />
+      </div>
+      <div>
+        <img src='public\weapons-bar.png'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<Armory />}
+        />
+      </div> 
+               <div>
+        <img src='public\string.png'  onClick={openModal} />
+        
+        <Modal
+          displayModal={isModalOpen}
+          closeModal={closeModal}
+          text={<rencontrewookie />}
+        />
+      </div> 
+    </>
+  )
 }
 
-
 export default App
+
+
