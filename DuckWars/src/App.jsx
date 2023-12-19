@@ -1,9 +1,11 @@
 import './App.css'
+import Cantina from './components/Cantina'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Age from './components/Age';
 import BackgroundMusic from './components/BackgroundMusic';
 import CharacPage from './components/characPage';
-
+import AccueilText from './components/AccueilText.jsx'
+import Hyperspace from './components/Hyperspace.jsx'
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣽⣧⣞⡤
@@ -32,7 +34,11 @@ console.log(`
     ⠤⠤⠤⢶⣿⣿⣿⣿⡿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠠⠞⠋⣥⠞⠽⠋⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
-const router = createBrowserRouter([
+
+
+
+
+const router = createBrowserRouter ([
   {
     path: '/',
     element: <div><Age/></div>
@@ -43,17 +49,23 @@ const router = createBrowserRouter([
   },
   {
     path: '/intro',
-    element: <div>generique avec infos perso selectionner </div>
+    element:  <AccueilText />
+  },
+  {
+    path: '/hyperspace',
+    element: <Hyperspace />
   },
   {
     path: '/Bar',
-    element: <div>Page d'interraction</div>
+    element: <div><Cantina /></div>
   },
 ])
 
 function App() {
+
   return <RouterProvider router={router} />
 }
+
 
 
 export default App
