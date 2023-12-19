@@ -1,8 +1,9 @@
-import './App.css'
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Age from './components/Age';
-import BackgroundMusic from './components/BackgroundMusic';
-import CharacPage from './components/characPage';
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Age from "./components/Age";
+import BackgroundMusic from "./components/BackgroundMusic";
+import TableauDeChasse from "./components/TableauDeChasse";
+import CharacPage from "./components/characPage";
 
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
@@ -34,26 +35,30 @@ console.log(`
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <div><Age/></div>
+    path: "/",
+    element: (
+      <div>
+        <Age />
+      </div>
+    ),
   },
   {
-    path: '/Characters',
-    element: < CharacPage/>
+    path: "/Characters",
+    element: <CharacPage />,
   },
   {
-    path: '/intro',
-    element: <div>generique avec infos perso selectionner </div>
+    path: "/intro",
+    element: <div>generique avec infos perso selectionner </div>,
   },
   {
-    path: '/Bar',
-    element: <div>Page d'interraction</div>
+    path: "/Bar",
+    element: <div>Page d'interraction</div>,
+    // <TableauDeChasse />,
   },
-])
+]);
 
 function App() {
-  return <RouterProvider router={router} />
+  return <RouterProvider router={router} />;
 }
 
-
-export default App
+export default App;
