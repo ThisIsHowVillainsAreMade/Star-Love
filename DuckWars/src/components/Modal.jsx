@@ -27,14 +27,14 @@ const Modal = ({ displayModal, closeModal, image, text }) => {
           {/*au clique déclenche la fonction handleCloseButtonClick  donc la fermeture */}
         </span>
         <img src={image} alt="Modal Content" />
-        <p>{text}</p>
+        <div>{text}</div>
         {/* affichage du text et de l'image dans la modal */}
       </div>
     </div>
   );
 };
 
-// export default Modal;
+export default Modal;
 
 // import './App.css'
 // import React, { useState } from 'react';
@@ -59,7 +59,7 @@ const Modal = ({ displayModal, closeModal, image, text }) => {
 //         src='https://www.pokepedia.fr/images/thumb/c/cc/Carapuce-RFVF.png/800px-Carapuce-RFVF.png'
 //         alt=""
 //         onClick={openModal}
-        
+
 //       />
 //       <button onClick={openModal}>test</button>
 //       <Modal
