@@ -1,22 +1,73 @@
-.Cantina {
-    background-image: url("public/cantina.png");
-    background-size: cover;
-        background-position: center center;
-        width: 100%;
-        height: 100%;
+.Background {
+        width: 1OOvw;
+        height: 100vh;
         position: absolute;
-        z-index: -1;    
+        z-index: -1;   
 }
 
-img {
+.VenteArmes {
+            position: relative;
+            width: 130px;
+                top: 345px;
+                left: 880px;
+}
+
+.VenteArmes:hover{
+    filter: brightness(175%);
+    cursor: pointer;
+    /* cursor: url("/sabrerouge.png"); */
+    /* cursor: url("/sabrebleu.png"), default; */
+}
+
+.wookieSexual {
+            width: 70px;
+            top: 140px;
+            left: 650px;
+            position: absolute;
+}
+
+.wookieSexual:hover{
+    filter: brightness(175%);
+    cursor: pointer;
+}
+
+.Radio{
+    position: absolute;
+    top: 380px;
+    left: 860px;
+    width: 200px;
+
+}
+
+.Radio:hover{
+    filter: brightness(175%);
+    cursor: pointer;
+}
+
+.drug{
+position: absolute;
+    top: 450px;
+    left: 1090px;
+    width: 50px;
+}
+
+.drug:hover{
+    filter: brightness(175%);
+    cursor: pointer;
+}
+
+.Wanted{
+    position: absolute;
+    top: 370px;
+    left: 750px;
     width: 100px;
-    height: 100px;
+    height: 85px;
+
 }
 
-.menus{
-    display: flex;
-    justify-content: space-between;
-        padding-top: 500px;
-        padding-left: 100px;
-        padding-right: 100px;
+.Wanted:hover{
+    filter: brightness(175%);
+    cursor: pointer;
 }
+
+
