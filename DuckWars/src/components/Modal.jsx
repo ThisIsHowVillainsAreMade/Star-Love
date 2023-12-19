@@ -34,7 +34,7 @@ const Modal = ({ displayModal, closeModal, image, text }) => {
   );
 };
 
-// export default Modal;
+export default Modal;
 
 // import './App.css'
 // import React, { useState } from 'react';
