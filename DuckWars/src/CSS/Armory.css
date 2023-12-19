@@ -1,0 +1,111 @@
+.containerArmes {
+	background: rgba(0, 10, 22, 0.7);
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+}
+
+
+
+.galerie-armes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-self: center;
+}
+
+.galerie-armes img {
+	margin: 50px;
+
+	filter: opacity(80%);
+	border: 0.1rem solid #fff;
+	box-shadow: 0 0 .2rem #fff,
+		0 0 .1rem #fff,
+		0 0 .8rem #bc13fe,
+		0 0 0.6rem #bc13fe,
+		0 0 2.2rem #bc13fe,
+		inset 0 0 1.1rem #bc13fe;
+
+}
+
+.galerie-armes img:hover {
+	filter: opacity(100%);
+	scale: 1.2;
+	transition-duration: all 1s linear;
+}
+
+.weaponArmoryPic {
+	height: 150px;
+	width: 200px;
+}
+
+.arme-bloc {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 25px;
+	cursor: pointer;
+}
+
+.conTainerDetArm {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 0.2rem solid #fff;
+	box-shadow: 0 0 .2rem #fff,
+		0 0 .2rem #fff,
+		0 0 2rem #bc13fe,
+		0 0 0.8rem #bc13fe,
+		0 0 2.8rem #bc13fe,
+		inset 0 0 1.3rem #bc13fe;
+	height: 700px;
+}
+
+.conTainerDetArm h3 {
+	color: #fff;
+	text-shadow:
+		0 0 1px #fff,
+		0 0 4px #fff,
+		0 0 8px #fff,
+		0 0 15x #bc13fe,
+		0 0 20px #bc13fe,
+		0 0 40px #bc13fe,
+		0 0 60px #bc13fe,
+		0 0 80px #bc13fe;
+}
+
+.conTainerDetArm p {
+	font-size: 24px;
+	color: #fff;
+	text-shadow:
+		0 0 1px #fff,
+		0 0 4px #fff,
+		0 0 8px #fff,
+		0 0 15x #bc13fe,
+		0 0 20px #bc13fe,
+		0 0 40px #bc13fe,
+		0 0 60px #bc13fe,
+		0 0 80px #bc13fe;
+}
+
+
+.arme-details {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.arme-details .image-grande {
+	width: 300px;
+	/* Taille ajustable */
+	height: auto;
+}
