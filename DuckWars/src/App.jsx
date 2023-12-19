@@ -41,7 +41,7 @@ console.log(`
 const router = createBrowserRouter ([
   {
     path: '/',
-    element: <div><Age/></div>
+    element: <Age/>
   },
   {
     path: '/Characters',
@@ -65,7 +65,6 @@ function App() {
 
   return <RouterProvider router={router} />
 }
-
 
 
 export default App
