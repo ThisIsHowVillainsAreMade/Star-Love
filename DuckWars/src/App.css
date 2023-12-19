@@ -7,7 +7,19 @@
 
 * {
   font-family: 'Starjedi';
+  cursor: url("/sabrebleu.png"), default;
   font-size: 2rem;
-  cursor: url("DuckWars/public/sabrebleu.png");
+
+
+  margin: 0;
+}
+
+*:active {
+  cursor: url("/sabrevert.png"), default;
+}
+
+#root {
+  min-height: 100svh;
+
 }
 

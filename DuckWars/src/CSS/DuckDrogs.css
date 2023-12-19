@@ -1,0 +1,60 @@
+.imageTemp {
+	width: 1000px;
+}
+
+@keyframes complexInvertAnimation {
+
+	0%,
+	5% {
+		filter: invert(0%);
+		opacity: 1;
+	}
+
+	40% {
+		filter: invert(100%) blur(0px);
+		opacity: 1;
+	}
+
+	50%,
+	80% {
+		filter: invert(100%) blur(20px);
+	}
+
+	90%,
+	100% {
+		filter: invert(0%) blur(0%);
+		opacity: 1;
+		animation: blinkAnimation 0.5s infinite
+	}
+}
+
+@keyframes blinkAnimation {
+
+	0%,
+	100% {
+		filter: invert(100%) blur(5px);
+		opacity: 1;
+	}
+
+	50% {
+		filter: invert(0%) blur(1px);
+		opacity: 0;
+	}
+}
+
+.animatedComplexInvert {
+	animation: complexInvertAnimation 8s;
+	animation-fill-mode: forwards;
+	/* Pour que l'animation reste à son état final */
+}
+
+.blinking {
+	animation: blinkAnimation 0.3s infinite;
+}
+
+
+/* Pour que l'animation reste à son état final */
+
+
+
+/* Attention modifier la durée selon les besoins */
