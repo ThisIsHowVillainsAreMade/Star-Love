@@ -49,6 +49,7 @@ a {
     filter: grayscale(0%);
     animation-duration: 0s;
     animation-play-state: paused;
+    color: #ffc500
 }
 
 .YesNo article img {
