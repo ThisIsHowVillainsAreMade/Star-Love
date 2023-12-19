@@ -1,9 +1,8 @@
 import "../CSS/Age.css";
-// import DarthQuack from '../assets/darthQuack.png'
-// import BabyJedi from '../assets/BabyJedi.png'
-// import OldJedi from '../assets/OldJedi.png'
-// import { Link } from 'react-router-dom'
-import Armory from "../components/Armory";
+import DarthQuack from "../assets/darthQuack.png";
+import BabyJedi from "../assets/BabyJedi.png";
+import OldJedi from "../assets/OldJedi.png";
+import { Link } from "react-router-dom";
 
 function Age() {
   return (
@@ -36,4 +35,4 @@ function Age() {
   );
 }
 
-export default Armory;
+export default Age;
