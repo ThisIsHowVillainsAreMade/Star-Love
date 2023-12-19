@@ -1,0 +1,93 @@
+.aboutUsDiv {
+  background-image: url("../assets/TableauDeChasse/tableauDeChasse.jpg");
+  background-size: cover;
+}
+
+.wantedTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
+  padding-top: 5%;
+  color: white;
+  text-shadow: #ffc500 1px 0 10px;
+  font-size: 7rem;
+}
+
+.wantedDiv {
+  justify-content: center;
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10svh;
+}
+
+#ocePic,
+#floPic,
+#gregPic,
+#ryanPic,
+#cedricPic,
+#romainPic,
+#yohanPic {
+  margin: 10px;
+  height: 500px;
+  font-weight: 500px;
+  border: solid 5px #ffc500;
+  border-radius: 250px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  top: -50%;
+}
+
+.cointainer {
+  background-color: black;
+  color: white;
+  border: solid 5px #ffc500;
+  border-radius: 15px;
+  display: flex;
+  gap: 1%;
+  opacity: 0.85;
+  box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cointainer:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.25s;
+  opacity: 1;
+  box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
+}
+
+.cointainer p {
+  font-size: 0.9rem;
+  width: 500px;
+  margin: 1%;
+  max-height: 500px;
+}
+
+.duckSociety {
+  margin-top: 7%;
+  margin-bottom: -1svh;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 10svh;
+}
+
+#duckColor {
+  color: black;
+}
+
+#societyColor {
+  color: #ffc500;
+}

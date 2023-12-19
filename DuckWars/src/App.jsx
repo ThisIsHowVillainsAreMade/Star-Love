@@ -1,5 +1,6 @@
-import './App.css'
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import "./App.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import TableauDeChasse from "./components/TableauDeChasse";
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣽⣧⣞⡤
@@ -28,30 +29,28 @@ console.log(`
     ⠤⠤⠤⢶⣿⣿⣿⣿⡿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠠⠞⠋⣥⠞⠽⠋⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
-    path: '/',
-    element: <div>Star Wars</div>
+    path: "/",
+    element: <div>Star Wars</div>,
   },
   {
-    path: '/Characters',
-    element: <div>Choose Characters infos via api</div>
+    path: "/Characters",
+    element: <div>Choose Characters infos via api</div>,
   },
   {
-    path: '/intro',
-    element: <div>generique avec infos perso selectionner </div>
+    path: "/intro",
+    element: <div>generique avec infos perso selectionner </div>,
   },
   {
-    path: '/Bar',
-    element: <div>Page d'interraction</div>
+    path: "/Bar",
+    element: <TableauDeChasse />,
+    // <div>Page d'interraction</div>,
   },
-])
+]);
 
 function App() {
-
-  return <RouterProvider router={router}/>
-
+  return <RouterProvider router={router} />;
 }
 
-
-export default App
+export default App;
