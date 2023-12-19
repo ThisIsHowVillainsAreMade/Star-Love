@@ -11,6 +11,7 @@ import linkedin from "../assets/TableauDeChasse/LinkedIn.png";
 import "../CSS/TableauDeChasse.css";
 
 function TableauDeChasse() {
+  // Génération d'un nombre random entre 1milliard et 2milliard pour définir le montant des primes par canard.
   // Oce
   const generateRandomPrice1 = () => {
     return (
@@ -62,7 +63,10 @@ function TableauDeChasse() {
   const prime7 = generateRandomPrice7().toLocaleString("fr-FR");
 
   return (
+    // Div qui doit être insérée dans le modal.
     <div className="aboutUsDiv">
+      {/* <div className="noise">
+        <div className="transparent"> */}
       <section className="aboutSection">
         <h1 className="wantedTitle">* WANTED *</h1>
         <div className="wantedDiv">
@@ -90,7 +94,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">océane</span>
               </p>
-              <p>Prime: {prime1}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime1}&nbsp;|||||||7</span>
+              </p>
               <p>
                 Crime: impliquée dans le coup d'Etat qui a permis à la dictature
                 des canards de renverser la République.
@@ -122,7 +128,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Florian</span>{" "}
               </p>
-              <p>Prime: {prime2}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime2}&nbsp;|||||||7</span>
+              </p>
               <p>Crime: Capture et vente de twil'ek et de wookies. </p>
               <p>
                 Signe de reconnaissance: Possède un accent du sud très prononcé
@@ -154,7 +162,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Gregory</span>{" "}
               </p>
-              <p>Prime: {prime3}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime3}&nbsp;|||||||7</span>
+              </p>
               <p>Crime: Trafique de cheveux pour financer le coup d'Etat. </p>
               <p>
                 Signe de reconnaissance: Absence de plumes sur le haut du crâne,
@@ -186,7 +196,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Ryan</span>{" "}
               </p>
-              <p>Prime: {prime4}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime4}&nbsp;|||||||7</span>
+              </p>
               <p>
                 Crime: Contrebande de Gradients pour financer le nouveau régime.
               </p>
@@ -220,7 +232,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Cédric</span>
               </p>
-              <p>Prime: {prime5}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime5}&nbsp;|||||||7</span>
+              </p>
               <p>
                 Crime: Kidnapping d'un REACTeur en chef et massacre du REACT.
               </p>
@@ -254,7 +268,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Romain</span>{" "}
               </p>
-              <p>Prime: {prime6}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime6}&nbsp;|||||||7</span>
+              </p>
               <p>
                 Crime: Plusieurs centaines de meurtres en série avec la force et
                 trafique de drogue
@@ -289,7 +305,9 @@ function TableauDeChasse() {
               <p>
                 Dark <span className="nameColor">Yohan</span>
               </p>
-              <p>Prime: {prime7}&nbsp;|||||||7</p>
+              <p>
+                Prime: <span className="redColor">{prime7}&nbsp;|||||||7</span>
+              </p>
               <p>Crime: a volé plusieurs milliers de culottes de wookies.</p>
               <p>
                 Signe de reconnaissance: porte toujours sur lui l'une de ses
@@ -307,6 +325,8 @@ function TableauDeChasse() {
         </p>
       </div>
     </div>
+    //   </div>
+    // </div>
   );
 }
 

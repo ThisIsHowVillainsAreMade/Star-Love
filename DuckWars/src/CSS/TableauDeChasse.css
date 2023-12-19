@@ -1,8 +1,29 @@
+/* LA DIV MERE */
+
 .aboutUsDiv {
-  /* background-image: url("../assets/TableauDeChasse/background.png");
-  background-size: contain; */
   background-color: #0d011b;
 }
+
+/*  BRUIT - FACULTATIF */
+
+/* .noise {
+  background-image: url("../assets/TableauDeChasse/noise.webp");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.1;
+}
+
+.transparent {
+  background: transparent;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.8;
+} */
+
+/* TITRE */
 
 .wantedTitle {
   display: flex;
@@ -10,11 +31,16 @@
   margin-top: -1%;
   padding-top: 5%;
   color: white;
+  /* Jaune Star Wars */
   /* text-shadow: #ffc500 1px 0 50px; */
+  /* Orange */
   /* text-shadow: #ff9900 1px 0 50px; */
+  /* Rouge */
   text-shadow: #ff0000 1px 0 50px;
   font-size: 7rem;
 }
+
+/* CARTES */
 
 .wantedDiv {
   justify-content: center;
@@ -89,12 +115,20 @@
 
 .nameColor {
   font-size: 0.9rem;
-  color: #ca0d0d;
+  color: white;
+  text-shadow: #ff0000 1px 0 50px;
 }
 
 .cointainer:hover .nameColor {
   color: #ffc500;
 }
+
+.redColor {
+  font-size: 0.9rem;
+  color: #ca0d0d;
+}
+
+/* FOOTER DUCKSOCIETY */
 
 .duckSociety {
   margin-top: 7%;
