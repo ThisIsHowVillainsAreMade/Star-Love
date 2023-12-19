@@ -9,8 +9,6 @@
   font-family: 'Starjedi';
   cursor: url("/sabrebleu.png"), default;
   font-size: 2rem;
-
-
   margin: 0;
 }
 
@@ -20,6 +18,4 @@
 
 #root {
   min-height: 100svh;
-
 }
-
