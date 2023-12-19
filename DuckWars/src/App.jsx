@@ -1,6 +1,9 @@
 import './App.css'
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import DuckDrogs from './components/duckDrogs';
+import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import Age from './components/Age';
+import BackgroundMusic from './components/BackgroundMusic';
+import CharacPage from './components/characPage';
+
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣽⣧⣞⡤
@@ -32,11 +35,11 @@ console.log(`
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Star Wars</div>
+    element: <div><Age/></div>
   },
   {
     path: '/Characters',
-    element: <div>Choose Characters infos via api</div>
+    element: < CharacPage/>
   },
   {
     path: '/intro',
@@ -49,10 +52,7 @@ const router = createBrowserRouter([
 ])
 
 function App() {
-
-  return <div>
-    <RouterProvider router={router} />
-  </div>
+  return <RouterProvider router={router} />
 }
 
 
