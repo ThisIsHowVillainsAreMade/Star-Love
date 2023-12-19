@@ -14,8 +14,6 @@ function CharacPage () {
         .then((data) => setCharactTab(data))
     },[]);
     const [selectedHero, setSelectedHero] = useState(null);
-    const tooMuchHeroes = charactTab.slice(0,5)
-    console.log(tooMuchHeroes);
     const handleClick = (hero) => {
       setSelectedHero(hero);
     };
@@ -24,8 +22,13 @@ function CharacPage () {
         <h1 id='choose'>choisis ton personnage</h1>
         <div id="CharacContainer">
           <div id='heroesContainer'>
-            {tooMuchHeroes.map((hero, index) => (
-              <CharactSelection key={index} character={hero} onClick={handleClick} />
+            {charactTab.slice(0,5).map((hero, index) => (
+              <CharactSelection
+                key={index}
+                character={hero}
+                onClick={handleClick}
+                isSelected={selectedHero === hero}
+              />
             ))}
           </div>
           <div className='charactInfos'>

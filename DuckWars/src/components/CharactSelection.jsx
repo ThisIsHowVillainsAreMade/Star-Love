@@ -1,11 +1,13 @@
-function CharactSelection ({character , onClick}) {
-
-    return (
-        <div id="charactSelection" onClick={() => onClick(character)}>
-            <div className='miniature'></div>
-            <div className='characters'>{character.name}</div>
-        </div>
-    )
+function CharactSelection({ character, onClick, isSelected }) {
+  return (
+    <div
+      className={`charactSelection ${isSelected ? 'selected' : ''}`}
+      onClick={() => onClick(character)}
+    >
+      <div className='miniature'></div>
+      <div className='characters'>{character.name}</div>
+    </div>
+  );
 }
 
-export default CharactSelection
+export default CharactSelection;

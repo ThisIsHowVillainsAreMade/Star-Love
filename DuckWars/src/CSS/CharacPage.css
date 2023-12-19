@@ -44,7 +44,7 @@
     width: 25%;
 }
 
-#charactSelection {
+.charactSelection {
     height: 15%;
     background-color: #334e6973;
     text-align: center;
@@ -59,6 +59,11 @@
     background-color: #0d1925;
     border-radius: 10px;
 }
+
+.selected {
+    filter: grayscale(1);
+}
+
 
 .characters {
     width: 80%;
@@ -100,6 +105,7 @@
     font-size: 0.6rem;
     color: white;
     -webkit-text-stroke: 1px #0d1925;
+    text-transform: lowercase;
 }
 
 
