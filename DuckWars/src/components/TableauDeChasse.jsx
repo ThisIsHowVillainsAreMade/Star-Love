@@ -3,7 +3,7 @@ import duckFlo from "../assets/TableauDeChasse/duckFlo.png";
 import duckGreg from "../assets/TableauDeChasse/duckGreg.png";
 import duckOce from "../assets/TableauDeChasse/duckOce.png";
 import duckRomain from "../assets/TableauDeChasse/duckRomain.png";
-import duckRyan from "../assets/TableauDeChasse/duckRyan.png";
+import duckRyan from "../assets/TableauDeChasse/duckRyanair.png";
 import duckYohan from "../assets/TableauDeChasse/duckYohan.png";
 import github from "../assets/TableauDeChasse/Github.png";
 import linkedin from "../assets/TableauDeChasse/LinkedIn.png";
@@ -11,6 +11,56 @@ import linkedin from "../assets/TableauDeChasse/LinkedIn.png";
 import "../CSS/TableauDeChasse.css";
 
 function TableauDeChasse() {
+  // Oce
+  const generateRandomPrice1 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime1 = generateRandomPrice1().toLocaleString("fr-FR");
+  // Flo
+  const generateRandomPrice2 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime2 = generateRandomPrice2().toLocaleString("fr-FR");
+  // Greg
+  const generateRandomPrice3 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime3 = generateRandomPrice3().toLocaleString("fr-FR");
+  // Ryan
+  const generateRandomPrice4 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime4 = generateRandomPrice4().toLocaleString("fr-FR");
+  // Cedric
+  const generateRandomPrice5 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime5 = generateRandomPrice5().toLocaleString("fr-FR");
+  // Romain
+  const generateRandomPrice6 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime6 = generateRandomPrice6().toLocaleString("fr-FR");
+  // Yohan
+  const generateRandomPrice7 = () => {
+    return (
+      Math.floor(Math.random() * (2000000000 - 1000000000 + 1)) + 1000000000
+    );
+  };
+  const prime7 = generateRandomPrice7().toLocaleString("fr-FR");
+
   return (
     <div className="aboutUsDiv">
       <section className="aboutSection">
@@ -25,7 +75,10 @@ function TableauDeChasse() {
                 id="ocePic"
               />
               <div className="links">
-                <a href="" target="_blank">
+                <a
+                  href="https://github.com/ThisIsHowVillainsAreMade"
+                  target="_blank"
+                >
                   <img src={github} alt="Github" />
                 </a>
                 <a href="https://www.linkedin.com/in/oaiw/" target="_blank">
@@ -33,13 +86,17 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark océane <br />
-              Prime: 1M <br />
-              Crime: impliquée dans le coup d'Etat qui a permis à la dictature
-              des canards de renverser la République. <br /> Signe de
-              reconnaissance: ses plumes sont souvent en bataille
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">océane</span>
+              </p>
+              <p>Prime: {prime1}&nbsp;|||||||7</p>
+              <p>
+                Crime: impliquée dans le coup d'Etat qui a permis à la dictature
+                des canards de renverser la République.
+              </p>
+              <p>Signe de reconnaissance: parle comme un droïde.</p>
+            </article>
           </div>
           {/* FLO */}
           <div className="cointainer">
@@ -61,13 +118,17 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Florian <br />
-              Prime: 1M <br />
-              Crime: Capture et vente de twil'ek et de wookies. <br />
-              Signe de reconnaissance: Possède un accent du sud très prononcé
-              lorsqu'il se détend.
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Florian</span>{" "}
+              </p>
+              <p>Prime: {prime2}&nbsp;|||||||7</p>
+              <p>Crime: Capture et vente de twil'ek et de wookies. </p>
+              <p>
+                Signe de reconnaissance: Possède un accent du sud très prononcé
+                lorsqu'il se détend.
+              </p>
+            </article>
           </div>
           {/* GREG */}
           <div className="cointainer">
@@ -89,13 +150,17 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Gregory <br />
-              Prime: 1M <br />
-              Crime: Trafique de cheveux pour financer le coup d'Etat. <br />
-              Signe de reconnaissance: Absence de plumes sur le haut du crâne,
-              présence d'un léger duvet à la place.
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Gregory</span>{" "}
+              </p>
+              <p>Prime: {prime3}&nbsp;|||||||7</p>
+              <p>Crime: Trafique de cheveux pour financer le coup d'Etat. </p>
+              <p>
+                Signe de reconnaissance: Absence de plumes sur le haut du crâne,
+                présence d'un léger duvet à la place.
+              </p>
+            </article>
           </div>
           {/* RYAN */}
           <div className="cointainer">
@@ -117,14 +182,19 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Ryan <br />
-              Prime: 1M <br />
-              Crime: Contrebande de Gradients pour financer le nouveau régime.{" "}
-              <br />
-              Signe de reconnaissance: il porte très souvent (toujours) un
-              casque audio sur sa tête.
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Ryan</span>{" "}
+              </p>
+              <p>Prime: {prime4}&nbsp;|||||||7</p>
+              <p>
+                Crime: Contrebande de Gradients pour financer le nouveau régime.
+              </p>
+              <p>
+                Signe de reconnaissance: il porte très souvent (toujours) un
+                casque audio sur sa tête.
+              </p>
+            </article>
           </div>
           {/* CEDRIC */}
           <div className="cointainer">
@@ -146,12 +216,19 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Yohan <br />
-              Prime: 1M <br />
-              Crime: <br />
-              Signe de reconnaissance:
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Cédric</span>
+              </p>
+              <p>Prime: {prime5}&nbsp;|||||||7</p>
+              <p>
+                Crime: Kidnapping d'un REACTeur en chef et massacre du REACT.
+              </p>
+              <p>
+                Signe de reconnaissance: il porte un tatouage "(props)" dans le
+                dos.
+              </p>
+            </article>
           </div>
           {/* ROMAIN */}
           <div className="cointainer">
@@ -173,12 +250,20 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Romain <br />
-              Prime: 1M <br />
-              Crime: <br />
-              Signe de reconnaissance:
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Romain</span>{" "}
+              </p>
+              <p>Prime: {prime6}&nbsp;|||||||7</p>
+              <p>
+                Crime: Plusieurs centaines de meurtres en série avec la force et
+                trafique de drogue
+              </p>
+              <p>
+                Signe de reconnaissance: a toujours une fine couche de ce qui
+                semble être de la poudre blanche sur le bec.
+              </p>
+            </article>
           </div>
           {/* YOHAN */}
           <div className="cointainer">
@@ -200,12 +285,17 @@ function TableauDeChasse() {
                 </a>
               </div>
             </div>
-            <p>
-              Dark Yohan <br />
-              Prime: 1M <br />
-              Crime: <br />
-              Signe de reconnaissance:
-            </p>
+            <article className="descriptionWanted">
+              <p>
+                Dark <span className="nameColor">Yohan</span>
+              </p>
+              <p>Prime: {prime7}&nbsp;|||||||7</p>
+              <p>Crime: a volé plusieurs milliers de culottes de wookies.</p>
+              <p>
+                Signe de reconnaissance: porte toujours sur lui l'une de ses
+                "trouvailles".
+              </p>
+            </article>
           </div>
         </div>
       </section>

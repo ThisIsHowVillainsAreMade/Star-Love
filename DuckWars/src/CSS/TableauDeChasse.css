@@ -1,6 +1,7 @@
 .aboutUsDiv {
-  background-image: url("../assets/TableauDeChasse/tableauDeChasse.jpg");
-  background-size: cover;
+  /* background-image: url("../assets/TableauDeChasse/background.png");
+  background-size: contain; */
+  background-color: #0d011b;
 }
 
 .wantedTitle {
@@ -9,7 +10,9 @@
   margin-top: -1%;
   padding-top: 5%;
   color: white;
-  text-shadow: #ffc500 1px 0 10px;
+  /* text-shadow: #ffc500 1px 0 50px; */
+  /* text-shadow: #ff9900 1px 0 50px; */
+  text-shadow: #ff0000 1px 0 50px;
   font-size: 7rem;
 }
 
@@ -53,39 +56,63 @@
   display: flex;
   gap: 1%;
   opacity: 0.85;
-  box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 19px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out;
 }
 
 .cointainer:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.25s;
   opacity: 1;
-  box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
-  -webkit-box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
-  -moz-box-shadow: 16px 16px 15px 22px rgba(0, 0, 0, 0.81);
+  box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
+  -webkit-box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
+  -moz-box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
 }
 
 .cointainer p {
   font-size: 0.9rem;
-  width: 500px;
+  width: 20svw;
   margin: 1%;
-  max-height: 500px;
+  max-height: 15svh;
+}
+
+.descriptionWanted {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  gap: 5%;
+  margin-right: 2svw;
+}
+
+.nameColor {
+  font-size: 0.9rem;
+  color: #ca0d0d;
+}
+
+.cointainer:hover .nameColor {
+  color: #ffc500;
 }
 
 .duckSociety {
   margin-top: 7%;
   margin-bottom: -1svh;
-  font-size: 1rem;
   color: white;
   display: flex;
   justify-content: center;
   line-height: 10svh;
 }
 
+p.duckSociety,
+span#duckColor,
+span#societyColor {
+  font-size: 1rem;
+}
+
 #duckColor {
-  color: black;
+  color: white;
 }
 
 #societyColor {
