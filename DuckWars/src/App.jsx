@@ -1,5 +1,7 @@
 import './App.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
+import Age from './components/Age';
+import BackgroundMusic from './components/BackgroundMusic';
 import CharacPage from './components/characPage';
 
 console.log(`
@@ -30,10 +32,10 @@ console.log(`
     ⠤⠤⠤⢶⣿⣿⣿⣿⡿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠠⠞⠋⣥⠞⠽⠋⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
-const router = createBrowserRouter ([
+const router = createBrowserRouter([
   {
     path: '/',
-    element: <div>Star Wars</div>
+    element: <div><Age/></div>
   },
   {
     path: '/Characters',
@@ -51,8 +53,7 @@ const router = createBrowserRouter ([
 
 function App() {
 
-  return <RouterProvider router={router}/>
-
+  return <RouterProvider router={router} />
 }
 
 
