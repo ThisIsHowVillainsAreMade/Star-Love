@@ -6,12 +6,13 @@ function Cantina () {
 
     return (
     <div className="Cantina" >
-            <img className="Background" src="public/back-no-element.png" alt="marché"/>
-            <img className="wookieSexual" src="public/string.png" alt="wookie"/>
-            <img className = "VenteArmes" src="public/weapons-bar.png" alt="armes" />
-            <img className="Radio" src="public/radio.png" alt="radio" />
-            <img className="drug" src="public/drug.png" alt="drug" />
-            <img className="Wanted" src="public/wanted-screen.png" alt="Wanted" />
+            <img className="Background" src="/back-no-element.png" alt="marché"/>
+            <img className="wookieSexual" src="/string.png" alt="wookie"/>
+            <img className = "VenteArmes" src="/weapons-bar.png" alt="armes" />
+            <img className="Radio" src="/radio.png" alt="radio" />
+            <img className="drug" src="/drug.png" alt="drug" />
+            <img className="Wanted" src="/wanted-screen.png" alt="Wanted" />
+            <img className="neon" src="/DuckSociety-Neon.png" alt="neon" />
     </div> 
     )
 }
