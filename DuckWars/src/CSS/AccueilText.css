@@ -7,7 +7,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  
+
 
 }
 
@@ -65,5 +65,31 @@ h2 {
   to {
     top: -8500px;
     transform: translateZ(-2500px) rotateX(21deg);
+  }
+}
+
+.mediaQ {
+  display: none;
+}
+
+.mediaQ p {
+  font-size: 30%;
+  text-align: center;
+  width: 50%;
+  color: azure;
+}
+
+
+@media screen and (max-width:1024px) {
+  .mediaQ {
+    position: absolute;
+    background-color: blue;
+    height: 100svh;
+    width: 100svw;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

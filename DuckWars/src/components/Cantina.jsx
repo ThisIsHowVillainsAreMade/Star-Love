@@ -69,6 +69,7 @@ function Cantina() {
         closeModal={closeModal}
         contentId={modalContentId}
       />
+      <div className="mediaQ"><p>Actuellement, le site web ne bénéficie pas encore d'une adaptation optimale aux petites tailles d'écran, ce qui peut affecter l'expérience utilisateur sur les dispositifs mobiles et les écrans de dimensions réduites</p></div>
     </div>
   );
 }

@@ -31,6 +31,7 @@ function Age() {
       <footer className="CheckAge">
         <h1>As-tu plus de 18 ans jeune padawan ?</h1>
       </footer>
+      <div className="mediaQ"><p>Actuellement, le site web ne bénéficie pas encore d'une adaptation optimale aux petites tailles d'écran, ce qui peut affecter l'expérience utilisateur sur les dispositifs mobiles et les écrans de dimensions réduites</p></div>
     </div>
   );
 }
