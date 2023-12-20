@@ -1,0 +1,27 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenu de la modal */
+.modal-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* Bouton de fermeture */
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+}
