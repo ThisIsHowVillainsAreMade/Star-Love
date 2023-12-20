@@ -1,9 +1,15 @@
-import '../CSS/Hyperspace.css'
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import "../CSS/Hyperspace.css";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+function Hyperspace() {
+  const navigate = useNavigate();
 
-function Hyperspace () {
-    const navigate = useNavigate();
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      // Au bout de 2 minutes, changer la page vers /hyperspace
+      navigate("/bar");
+    }, 5 * 1000); // 2 minutes en millisecondes
+
 
     useEffect(() => {
       const timeoutId = setTimeout(() => {
@@ -32,7 +38,6 @@ return (
                 <div className="side side-back"></div>
             </div>
     </div>
-</div>
-)
+  );
 }
-export default Hyperspace
+export default Hyperspace;

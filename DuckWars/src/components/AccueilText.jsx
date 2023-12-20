@@ -1,10 +1,11 @@
 // import React from 'react'
-import '../CSS/AccueilText.css'
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import backgroundMusic from '/duckwars.mp3'
+import "../CSS/AccueilText.css";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import backgroundMusic from "/duckwars.mp3";
+import SkipButtonsGenerique from "./SkipButtonsGenerique";
 
-function AccueilText () {
+function AccueilText() {
   const navigate = useNavigate();
   let audio;
 
@@ -15,14 +16,14 @@ function AccueilText () {
 
     const timeoutId = setTimeout(() => {
       // Au bout de 2 minutes, changer la page vers /hyperspace
-      navigate('/hyperspace');
+      navigate("/hyperspace");
       audio.pause();
     }, 30 * 1000); // 2 minutes en millisecondes
 
     // Assurez-vous de nettoyer le timeout lorsque le composant est démonté
     return () => {
-    audio.pause();
-    clearTimeout(timeoutId);
+      audio.pause();
+      clearTimeout(timeoutId);
     };
   }, [navigate]);
 
@@ -32,8 +33,8 @@ function AccueilText () {
     }
   };
 
-
     return (
+      <>
     <div className="accueilContainer">
     <div className="accueilText">
     <div className="scroll-text">
@@ -48,6 +49,9 @@ function AccueilText () {
       {/* <button onClick={handleButtonClick}>Démarrer la musique</button> */}
     </div>
     </div>
-  </div>)
+  </div>  
+  <SkipButtonsGenerique />
+    </>
+  );
 }
-export default AccueilText
+export default AccueilText;

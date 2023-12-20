@@ -1,0 +1,13 @@
+.skip {
+  position: absolute;
+  z-index: 10;
+  top: 2%;
+  left: 1%;
+  max-height: 50px;
+  max-width: 100px;
+}
+
+.skip p {
+  font-size: 1rem;
+  line-height: 45px;
+}

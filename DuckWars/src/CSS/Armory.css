@@ -34,6 +34,11 @@
 	transition-duration: all 1s linear;
 }
 
+.weaponTitle {
+	color: white;
+	margin-bottom: 1rem;
+}
+
 .weaponArmoryPic {
 	height: 150px;
 	width: 200px;
@@ -70,6 +75,7 @@
 .conTainerDetArm h3 {
 	font-size: 40px;
 	color: #fff;
+
 }
 
 .conTainerDetArm p {
@@ -78,7 +84,7 @@
 
 .weponDesc {
 	font-size: 30px;
-	color: black;
+	color: white;
 
 }
 
@@ -96,6 +102,10 @@
 	width: 450px;
 	/* Taille ajustable */
 	height: auto;
+}
+
+.image-grande {
+	border-radius: 40px;
 }
 
 .weaponPrice {
