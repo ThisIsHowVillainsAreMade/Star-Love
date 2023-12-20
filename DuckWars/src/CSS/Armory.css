@@ -5,6 +5,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;
+	scale: 0.8;
 }
 
 .galerie-armes {
@@ -50,7 +51,6 @@
 }
 
 .conTainerDetArm {
-	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -62,8 +62,8 @@
 		0 0 0.8rem #bc13fe,
 		0 0 2.8rem #bc13fe,
 		inset 0 0 1.3rem #bc13fe;
-	height: 700px;
-	width: 700px;
+	height: 600px;
+	width: 80%;
 }
 
 
@@ -89,6 +89,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	scale: 0.8;
 }
 
 .arme-details .image-grande {

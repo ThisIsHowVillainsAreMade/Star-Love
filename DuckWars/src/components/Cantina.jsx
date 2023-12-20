@@ -1,9 +1,10 @@
-import React from "react";
 import "../CSS/Cantina.css";
 import "../CSS/DuckDrogs.css";
+import React, { useState } from "react";
 import { useAudio } from "./BackgroundMusic";
 import Bulle from "./Bulle";
 import PopUp from "./PopUp";
+import TestModal from "./TestModal";
 
 const startEffect = () => {
   document.body.classList.add("animatedComplexInvert");
@@ -18,23 +19,35 @@ const startEffect = () => {
 };
 
 function Cantina() {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // const openModal = () => {
-  //   setIsModalOpen(true);
-  // };
-
-  // const closeModal = () => {
-  //   setIsModalOpen(false);
-  // };
-
   const [playing, togglePlayback] = useAudio("/stranger-things-124008.mp3");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContentId, setModalContentId] = useState("");
+
+  const openModal = (contentId) => {
+    setModalContentId(contentId);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContentId("");
+  };
 
   return (
     <div className="Cantina">
       <img className="Background" src="/back-no-element.png" alt="marché" />
-      <img className="wookieSexual" src="/string.png" alt="wookie" />
-      <img className="VenteArmes" src="/weapons-bar.png" alt="armes" />
+      <img
+        className="wookieSexual"
+        src="/string.png"
+        alt="wookie"
+        onClick={() => openModal("wookiesexuel")}
+      />
+      <img
+        className="VenteArmes"
+        src="/weapons-bar.png"
+        alt="armes"
+        onClick={() => openModal("ventearmes")}
+      />
       <img
         className="Radio"
         src="/radio.png"
@@ -42,10 +55,20 @@ function Cantina() {
         onClick={togglePlayback}
       />
       <img className="drug" src="/drug.png" alt="drug" onClick={startEffect} />
-      <img className="Wanted" src="/wanted-screen.png" alt="Wanted" />
+      <img
+        className="Wanted"
+        src="/wanted-screen.png"
+        alt="Wanted"
+        onClick={() => openModal("wanted")}
+      />
       <img className="neon" src="/DuckSociety-Neon.png" alt="neon" />
       <Bulle />
       <PopUp />
+      <TestModal
+        displayModal={isModalOpen}
+        closeModal={closeModal}
+        contentId={modalContentId}
+      />
     </div>
   );
 }
