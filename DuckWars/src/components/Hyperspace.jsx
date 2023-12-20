@@ -9,7 +9,7 @@ function Hyperspace () {
       const timeoutId = setTimeout(() => {
         // Au bout de 2 minutes, changer la page vers /hyperspace
         navigate('/bar');
-      }, 3 * 1000); // 2 minutes en millisecondes
+      }, 5 * 1000); // 2 minutes en millisecondes
   
       // Assurez-vous de nettoyer le timeout lorsque le composant est démonté
       return () => clearTimeout(timeoutId);
