@@ -75,7 +75,7 @@ const Armory = () => {
 				<div className="arme-details">
 					<div className='conTainerDetArm'>
 						<img src={armeActive.src} alt={armeActive.nom} className="image-grande" />
-						<h3>{armeActive.nom}</h3>
+						<h3 className='weaponTitle'>{armeActive.nom}</h3>
 						<p className='weponDesc'>{armeActive.informations}</p>
 						<p className='weaponPrice'>Prix : {armeActive.prix}</p>
 					</div>
