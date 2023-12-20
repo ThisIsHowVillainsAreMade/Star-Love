@@ -63,11 +63,7 @@
 
 }
 
-<<<<<<< HEAD
-#Radio:hover{
-=======
 .Radio:hover {
->>>>>>> b0945c835a4ee46035490ff94abf9a7b615cb5dc
     filter: brightness(175%);
     cursor: url("/sabrerouge.png"), default;
 }
