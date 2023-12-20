@@ -1,0 +1,52 @@
+/* A CHANGER EN DISPLAY NONE - ACTIVER LA BULLE SOIT AU HOVER SOIT AU CLIC */
+
+@keyframes bubble {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+.bubble-text {
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  min-height: 7svh;
+  background: #de89f8ad;
+  color: #fff;
+  padding: 7px 15px;
+  border-radius: 3px;
+  width: 350px;
+  font-size: 0.5rem;
+  text-align: center;
+  animation: bubble 5s infinite;
+}
+
+.bubble-text::after {
+  content: "";
+  top: -100%;
+  right: 20%;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #de89f8ad;
+  position: absolute;
+  bottom: 100%;
+  animation: bubble 5s infinite;
+}
+
+.textToHide {
+  background-color: transparent;
+  font-size: 0.5rem;
+}
+
+.textToHide:visited {
+  display: none;
+}

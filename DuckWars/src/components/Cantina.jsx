@@ -2,6 +2,7 @@ import React from "react";
 import '../CSS/Cantina.css';
 import '../CSS/DuckDrogs.css';
 import {useAudio} from "./BackgroundMusic"
+import Bulle from "./Bulle";
 
 const startEffect = () => {
     document.body.classList.add('animatedComplexInvert');
@@ -33,8 +34,10 @@ function Cantina() {
             <img className="drug" src="/drug.png" alt="drug" onClick={startEffect} />
             <img className="Wanted" src="/wanted-screen.png" alt="Wanted" />
             <img className="neon" src="/DuckSociety-Neon.png" alt="neon" />
+            <Bulle />
         </div> 
     );
+
 }
 
 export default Cantina;
