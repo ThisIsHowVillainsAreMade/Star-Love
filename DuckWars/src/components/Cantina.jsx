@@ -3,6 +3,7 @@ import "../CSS/Cantina.css";
 import "../CSS/DuckDrogs.css";
 import { useAudio } from "./BackgroundMusic";
 import Bulle from "./Bulle";
+import PopUp from "./PopUp";
 
 const startEffect = () => {
   document.body.classList.add("animatedComplexInvert");
@@ -44,6 +45,7 @@ function Cantina() {
       <img className="Wanted" src="/wanted-screen.png" alt="Wanted" />
       <img className="neon" src="/DuckSociety-Neon.png" alt="neon" />
       <Bulle />
+      <PopUp />
     </div>
   );
 }
