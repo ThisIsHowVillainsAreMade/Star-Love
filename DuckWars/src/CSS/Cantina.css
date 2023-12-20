@@ -1,0 +1,216 @@
+.Background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.VenteArmes {
+    position: absolute;
+    width: 120px;
+    top: 46%;
+    left: 58%;
+}
+
+.VenteArmes:hover {
+    filter: brightness(175%);
+    cursor: url("/sabrerouge.png"), default;
+}
+
+.VenteArmes:active {
+    scale: 1.1;
+}
+
+.wookieSexual {
+    width: 70px;
+    top: 20%;
+    left: 43%;
+    position: absolute;
+    animation-duration: 5s;
+    animation-name: panties;
+    animation-iteration-count: infinite;
+}
+
+@keyframes panties {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    50% {
+        transform: rotateZ(5deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+.wookieSexual:hover {
+    filter: brightness(175%);
+    cursor: url("/sabrerouge.png"), default;
+}
+
+.wookieSexual:active {
+    scale: 1.1;
+}
+
+.Radio {
+    position: absolute;
+    top: 53%;
+    left: 52%;
+    width: 200px;
+
+}
+
+.Radio:hover {
+    filter: brightness(175%);
+    cursor: url("/sabrerouge.png"), default;
+}
+
+.Radio:active {
+    scale: 1.1;
+}
+
+.drug {
+    position: absolute;
+    top: 59%;
+    left: 71.5%;
+    width: 50px;
+}
+
+.drug:hover {
+    filter: brightness(175%);
+    cursor: url("/sabrerouge.png"), default;
+}
+
+.drug:active {
+    scale: 1.1;
+}
+
+.Wanted {
+    position: absolute;
+    top: 49%;
+    left: 49%;
+    width: 7%;
+    height: 12%;
+
+}
+
+.Wanted:hover {
+    filter: brightness(175%);
+    cursor: url("/sabrerouge.png"), default;
+}
+
+.Wanted:active {
+    scale: 1.1;
+}
+
+
+.neon {
+    position: absolute;
+    width: 15%;
+    min-width: 150px;
+    top: 75%;
+    left: 55%;
+    animation-duration: 4s;
+    animation-name: neon;
+    animation-iteration-count: infinite;
+}
+
+@keyframes neon {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .VenteArmes {
+        width: 100px;
+    }
+
+    .Radio {
+        left: 48%;
+    }
+
+    .neon {
+        top: 78%;
+        left: 54%;
+    }
+}
+
+@media screen and (min-width:1600px) {
+
+    .Radio {
+        top: 54%;
+        left: 55%;
+    }
+
+    .drug {
+        position: absolute;
+        top: 59%;
+        left: 71.8%;
+        width: 50px;
+    }
+
+    .neon {
+        top: 72%;
+        left: 55%;
+    }
+
+}
+
+@media screen and (max-height:700px) {
+    .VenteArmes {
+        top: 45%;
+    }
+
+    .Radio {
+        top: 52%;
+        left: 55%;
+        width: 150px;
+    }
+
+    .drug {
+        position: absolute;
+        top: 59%;
+        left: 71.8%;
+        width: 50px;
+    }
+}
+
+
+.mediaQ {
+    display: none;
+}
+
+.mediaQ p {
+    font-size: 30%;
+    text-align: center;
+    width: 50%;
+    color: azure;
+}
+
+
+@media screen and (max-width:1024px) {
+    .mediaQ {
+        position: absolute;
+        background-color: blue;
+        height: 100svh;
+        width: 100svw;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

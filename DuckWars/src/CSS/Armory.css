@@ -1,0 +1,114 @@
+.containerArmes {
+	background: rgba(0, 10, 22, 0.7);
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	scale: 0.8;
+}
+
+.galerie-armes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-self: center;
+}
+
+.galerie-armes img {
+	margin: 50px;
+	filter: opacity(80%);
+	border: 0.1rem solid #fff;
+	box-shadow: 0 0 .2rem #fff,
+		0 0 .1rem #fff,
+		0 0 .8rem #bc13fe,
+		0 0 0.6rem #bc13fe,
+		0 0 2.2rem #bc13fe,
+		inset 0 0 1.1rem #bc13fe;
+
+}
+
+.galerie-armes img:hover {
+	filter: opacity(100%);
+	scale: 1.2;
+	transition-duration: all 1s linear;
+}
+
+.weaponTitle {
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.weaponArmoryPic {
+	height: 150px;
+	width: 200px;
+}
+
+.arme-bloc {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+	padding: 25px;
+	cursor: pointer;
+}
+
+.conTainerDetArm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 0.2rem solid #fff;
+	box-shadow: 0 0 .2rem #fff,
+		0 0 .2rem #fff,
+		0 0 2rem #bc13fe,
+		0 0 0.8rem #bc13fe,
+		0 0 2.8rem #bc13fe,
+		inset 0 0 1.3rem #bc13fe;
+	height: 600px;
+	width: 80%;
+}
+
+
+.conTainerDetArm h3 {
+	font-size: 40px;
+	color: #fff;
+
+}
+
+.conTainerDetArm p {
+	text-align: center;
+}
+
+.weponDesc {
+	font-size: 30px;
+	color: white;
+
+}
+
+
+.arme-details {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	scale: 0.8;
+}
+
+.arme-details .image-grande {
+	width: 450px;
+	/* Taille ajustable */
+	height: auto;
+}
+
+.image-grande {
+	border-radius: 40px;
+}
+
+.weaponPrice {
+	color: #fff;
+	font-size: 30px;
+}

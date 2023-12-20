@@ -1,0 +1,33 @@
+/* Styles pour le bouton de lecture/pause */
+.playButton {
+	font-size: 16px;
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+.playButton:hover {
+	background-color: #45a049;
+}
+
+.muteButton {
+	font-size: 16px;
+	padding: 10px 20px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.muteButton:hover {
+	background-color: #d32f2f;
+}
+
+.inputVolume {
+	display: none;
+}

@@ -1,0 +1,83 @@
+@keyframes popUp {
+  0% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+}
+
+@keyframes textcoloranime {
+  0% {
+    color: black;
+  }
+
+  50% {
+    color: red;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+.popUp {
+  background-color: rgb(240, 198, 198);
+  color: black;
+  height: 220px;
+  width: 400px;
+  display: flex;
+  border: solid 5px red;
+  animation: popUp infinite 15s;
+  position: absolute;
+  top: 20%;
+}
+
+.popUp img {
+  height: 25svh;
+  position: relative;
+  animation: zoom infinite 1s;
+}
+
+.popUp p {
+  width: 50%;
+  font-size: 0.3rem;
+  margin: 0% 2% 0% 2%;
+  text-align: center;
+  line-height: 20px;
+  animation: textcoloranime infinite 1s;
+}
+
+.popUp span {
+  font-size: 0.5rem;
+}
