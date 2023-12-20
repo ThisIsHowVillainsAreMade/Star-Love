@@ -1,12 +1,13 @@
 import "./App.css";
+import Cantina from "./components/Cantina";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Age from "./components/Age";
 import BackgroundMusic from "./components/BackgroundMusic";
-import TableauDeChasse from "./components/TableauDeChasse";
 import CharacPage from "./components/characPage";
+import AccueilText from "./components/AccueilText.jsx";
+import Hyperspace from "./components/Hyperspace.jsx";
 import Modal from "./components/Modal";
 import { useState } from "react";
-
 console.log(`
   ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⣰⠀⡀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣽⣧⣞⡤
@@ -35,14 +36,11 @@ console.log(`
     ⠤⠤⠤⢶⣿⣿⣿⣿⡿⣿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠠⠞⠋⣥⠞⠽⠋⠈⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ D U C K W A R S`);
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <div>
-        <Age />
-      </div>
-    ),
+    element: <Age />,
   },
   {
     path: "/Characters",
@@ -50,39 +48,42 @@ const router = createBrowserRouter([
   },
   {
     path: "/intro",
-    element: <div>generique avec infos perso selectionner </div>,
+    element: <AccueilText />,
+  },
+  {
+    path: "/hyperspace",
+    element: <Hyperspace />,
   },
   {
     path: "/Bar",
-    // element:    <modal text={<Armory/>}
-                // <modal text={<drogue/>}
-                // <modal text={<wookie/>}
-                // <modal text= {<radio/>}
-                // <modal text={<alcool/>}
+    element: (
+      <div>
+        <Cantina />
+      </div>
+    ),
   },
-  {
-    path: "/Test",
-    element: <Modal text={<TableauDeChasse />} 
-    
-    />,
-  },
+  // {
+  //   path: "/Test",
+  //   element: <Modal text={<TableauDeChasse />} />,
+  // },
 ]);
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
+  // const openModal = () => {
+  //   setIsModalOpen(true);
+  // };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  // const closeModal = () => {
+  //   setIsModalOpen(false);
+  // };
 
   return (
     <>
       <RouterProvider router={router} />
-      <div>
+      {/* PARTIE DU MODAL COMMENTE */}
+      {/* <div>
         <img src='https://www.pokepedia.fr/images/thumb/8/89/Salam%C3%A8che-RFVF.png/530px-Salam%C3%A8che-RFVF.png?20141019213025' onClick={openModal} />
         
         <Modal
@@ -90,7 +91,8 @@ function App() {
           closeModal={closeModal}
           text={<TableauDeChasse />}
         />
-      </div>
+      </div> */}
+      {/* FIN DE LA PARTIE COMMENTEE. EN DESSOUS C ETAIT DEJA EN COMMENTAIRE MERCIII */}
       {/* <div>
         <img src='arme'  onClick={openModal} />
         
@@ -100,7 +102,7 @@ function App() {
           text={<Armory />}
         />
       </div> */}
-        {/* <div>
+      {/* <div>
         <img src='drogue'  onClick={openModal} />
         
         <Modal
@@ -109,7 +111,7 @@ function App() {
           text={<DuckDrogs/>}
         />
       </div> */}
-              {/* <div>
+      {/* <div>
         <img src='string'  onClick={openModal} />
         
         <Modal
@@ -127,7 +129,7 @@ function App() {
           text={<bouteille sur le bar />}
         />
       </div> */}
-            {/* <div>
+      {/* <div>
         <img src='radio'  onClick={openModal} />
         
         <Modal
@@ -136,9 +138,8 @@ function App() {
           text={<Radio />}
         />
       </div> */}
-
     </>
-  )
+  );
 }
 
 export default App;
