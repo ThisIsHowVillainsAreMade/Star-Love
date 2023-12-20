@@ -9,6 +9,8 @@
   align-items: center;
   background-size: cover;
   backdrop-filter: blur(10px);
+  scale: 0.8;
+  max-height: 100vh;
 }
 
 .carousel-container {
