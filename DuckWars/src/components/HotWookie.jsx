@@ -53,7 +53,6 @@ const HotWookie = () => {
 
   return (
     <div className='hot-wookies'>
-      <button onClick={openModal}>ouvrir</button>
       <div id="carousel-container" className="carousel-container">
         
         <button className="carousel-button" onClick={goToPrevSlide}>
@@ -76,7 +75,6 @@ const HotWookie = () => {
                     <p className="age">{article.age}</p>
                   </div>
                 </article>
-                <p onClick={closeModal} className='closeModal'>Fermer</p>
               </div>
             ))}
           </div>
