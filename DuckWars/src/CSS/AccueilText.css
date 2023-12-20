@@ -7,6 +7,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  
 
 }
 
@@ -36,15 +37,16 @@
   color: #ffc909;
   font-size: 32px;
   line-height: 80px;
-  font-weight: bold;
+  /* font-weight: bold; */
   text-align: justify;
   position: relative;
-  animation: scroll 110s linear forwards;
+  animation: scroll 60s linear forwards;
   margin-top: 5%;
 }
 
 .scroll-text p {
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
+  font-family: Roboto;
 }
 
 
