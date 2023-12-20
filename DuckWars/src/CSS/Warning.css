@@ -1,0 +1,12 @@
+.warning {
+  position: relative;
+  /* top: 25px; */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.363);
+  display: flex;
+  justify-content: center;
+}
+
+.warning p {
+  font-size: 0.5rem;
+}

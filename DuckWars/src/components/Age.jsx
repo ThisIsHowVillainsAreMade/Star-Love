@@ -3,11 +3,13 @@ import DarthQuack from "../assets/darthQuack.png";
 import BabyJedi from "../assets/BabyJedi.png";
 import OldJedi from "../assets/OldJedi.png";
 import { Link } from "react-router-dom";
+import Warning from "./Warning";
 
 function Age() {
   return (
     // Div principale
     <div className="Age">
+      <Warning />
       {/* Choix pour verifier majorité */}
       <div className="YesNo">
         {/* Oui donc redirection sur choix perso */}
@@ -31,7 +33,14 @@ function Age() {
       <footer className="CheckAge">
         <h1>As-tu plus de 18 ans jeune padawan ?</h1>
       </footer>
-      <div className="mediaQ"><p>Actuellement, le site web ne bénéficie pas encore d'une adaptation optimale aux petites tailles d'écran, ce qui peut affecter l'expérience utilisateur sur les dispositifs mobiles et les écrans de dimensions réduites</p></div>
+      <div className="mediaQ">
+        <p>
+          Actuellement, le site web ne bénéficie pas encore d'une adaptation
+          optimale aux petites tailles d'écran, ce qui peut affecter
+          l'expérience utilisateur sur les dispositifs mobiles et les écrans de
+          dimensions réduites
+        </p>
+      </div>
     </div>
   );
 }
