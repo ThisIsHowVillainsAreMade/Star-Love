@@ -54,7 +54,7 @@
 .popUp {
   background-color: rgb(240, 198, 198);
   color: black;
-  height: 25svh;
+  height: 220px;
   width: 400px;
   display: flex;
   border: solid 5px red;
