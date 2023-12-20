@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import myMusic from '../assets/stranger-things-124008.mp3';
+import myMusic from '/stranger-things-124008.mp3';
 import '../Css/BackgroundMusic.css';
 
 const useAudio = (url) => {
@@ -43,7 +43,7 @@ const BackgroundMusic = () => {
 			<button onClick={toggleMute} className='muteButton'>
 				{muted ? 'mute off' : 'mute on'}
 			</button>
-			{/* <input
+			<input
 				className='imputVolume'
 				type="range"
 				min="0"
@@ -51,9 +51,9 @@ const BackgroundMusic = () => {
 				step="0.01"
 				value={volume}
 				onChange={(e) => setVolume(parseFloat(e.target.value))}
-			/> */}
+			/>
 		</div>
 	);
 };
 
-export default BackgroundMusic;
+export { useAudio, BackgroundMusic as default };
