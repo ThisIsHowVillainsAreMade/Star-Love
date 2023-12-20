@@ -1,0 +1,178 @@
+/* LA DIV MERE */
+
+.aboutUsDiv {
+  background-color: #0d011b;
+  scrollbar-width: none;
+  /* opacity: 0.5; */
+}
+
+.aboutUsDiv::-webkit-scrollbar {
+  display: none;
+}
+
+/* .aboutUsDiv:hover {
+  opacity: 1;
+} */
+
+/*  BRUIT - FACULTATIF */
+
+/* .noise {
+  background-image: url("../assets/TableauDeChasse/noise.webp");
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+  z-index: -3;
+  opacity: 0.1;
+}
+
+.transparent {
+  background: transparent;
+  position: absolute;
+  z-index: -2;
+  opacity: 0.8;
+} */
+
+/* TITRE */
+
+.wantedTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
+  padding-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+  /* Jaune Star Wars */
+  /* text-shadow: #ffc500 1px 0 50px; */
+  /* Orange */
+  /* text-shadow: #ff9900 1px 0 50px; */
+  /* Rouge */
+  text-shadow: #ff0000 1px 0 50px;
+  font-size: 7rem;
+}
+
+/* CARTES */
+
+.wantedDiv {
+  justify-content: center;
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10svh;
+}
+
+#ocePic,
+#floPic,
+#gregPic,
+#ryanPic,
+#cedricPic,
+#romainPic,
+#yohanPic {
+  /* margin: 10px; */
+  margin: 20% 0% 0% 5%;
+  height: 17svh;
+  font-weight: 20svw;
+  border: solid 5px #ffc500;
+  border-radius: 250px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  top: -15%;
+}
+
+.cointainer {
+  background-color: black;
+  color: white;
+  border: solid 5px #ffc500;
+  border-radius: 15px;
+  display: flex;
+  gap: 1%;
+  opacity: 0.85;
+  box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  -moz-box-shadow: 10px 10px 19px 0px rgba(249, 253, 0, 0.75);
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out,
+    box-shadow 0.25s ease-in-out;
+  height: 30svh;
+}
+
+.cointainer:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.25s;
+  opacity: 1;
+  box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
+  -webkit-box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
+  -moz-box-shadow: 12px 12px 15px 10px rgba(249, 253, 0, 0.75);
+}
+
+.cointainer p {
+  font-size: 0.7rem;
+  width: 20svw;
+  margin: 1% 5% 1% 5%;
+  text-align: justify;
+}
+
+.descriptionWanted {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  gap: 5%;
+  margin-right: 2svw;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.descriptionWanted::-webkit-scrollbar {
+  display: none;
+}
+
+.descriptionWanted p {
+  max-width: 90%;
+}
+
+.nameColor {
+  font-size: 0.7rem;
+  color: white;
+  text-shadow: #ff0000 1px 0 50px;
+}
+
+.cointainer:hover .nameColor {
+  color: #ffc500;
+}
+
+.redColor {
+  font-size: 0.7rem;
+  color: #ca0d0d;
+}
+
+/* FOOTER DUCKSOCIETY */
+
+.duckSociety {
+  margin-top: 7%;
+  margin-bottom: -1svh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 10svh;
+}
+
+p.duckSociety,
+span#duckColor,
+span#societyColor {
+  font-size: 1rem;
+}
+
+#duckColor {
+  color: white;
+}
+
+#societyColor {
+  color: #ffc500;
+}
