@@ -1,37 +1,40 @@
-.Background {
-        width: 1OOvw;
-        height: 100vh;
+#Background {
+        object-fit: cover;
+        width: 100%;
         position: absolute;
-        z-index: -1;   
+        z-index: -1; 
+        height: 100%;
+     
+         
 }
 
-.VenteArmes {
-            position: relative;
+#VenteArmes {
+            position: absolute;
             width: 130px;
                 top: 345px;
                 left: 880px;
 }
 
-.VenteArmes:hover{
+#VenteArmes:hover{
     filter: brightness(175%);
     cursor: pointer;
-    /* cursor: url("/sabrerouge.png"); */
-    /* cursor: url("/sabrebleu.png"), default; */
+    /* cursor: url("/sabrerouge#png"); */
+    /* cursor: url("/sabrebleu#png"), default; */
 }
 
-.wookieSexual {
+#wookieSexual {
             width: 70px;
             top: 140px;
             left: 650px;
             position: absolute;
 }
 
-.wookieSexual:hover{
+#wookieSexual:hover{
     filter: brightness(175%);
     cursor: pointer;
 }
 
-.Radio{
+#Radio{
     position: absolute;
     top: 380px;
     left: 860px;
@@ -39,24 +42,24 @@
 
 }
 
-.Radio:hover{
+#Radio:hover{
     filter: brightness(175%);
     cursor: pointer;
 }
 
-.drug{
+#drug{
 position: absolute;
     top: 450px;
     left: 1090px;
     width: 50px;
 }
 
-.drug:hover{
+#drug:hover{
     filter: brightness(175%);
     cursor: pointer;
 }
 
-.Wanted{
+#Wanted{
     position: absolute;
     top: 370px;
     left: 750px;
@@ -65,7 +68,7 @@ position: absolute;
 
 }
 
-.Wanted:hover{
+#Wanted:hover{
     filter: brightness(175%);
     cursor: pointer;
 }
