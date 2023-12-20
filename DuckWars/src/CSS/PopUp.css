@@ -3,14 +3,17 @@
     transform: translateX(-100%);
     opacity: 1;
   }
+
   70% {
     transform: translateX(-100%);
     opacity: 1;
   }
+
   80% {
     transform: translateX(0%);
     opacity: 1;
   }
+
   100% {
     transform: translateX(0%);
     opacity: 1;
@@ -22,10 +25,12 @@
     transform: scale(0.5);
     opacity: 1;
   }
+
   50% {
     transform: scale(1);
     opacity: 1;
   }
+
   100% {
     transform: scale(0.5);
     opacity: 1;
@@ -36,9 +41,11 @@
   0% {
     color: black;
   }
+
   50% {
     color: red;
   }
+
   100% {
     color: black;
   }
@@ -48,7 +55,7 @@
   background-color: rgb(240, 198, 198);
   color: black;
   height: 25svh;
-  width: 25svw;
+  width: 400px;
   display: flex;
   border: solid 5px red;
   animation: popUp infinite 15s;
@@ -63,6 +70,7 @@
 }
 
 .popUp p {
+  width: 50%;
   font-size: 0.3rem;
   margin: 0% 2% 0% 2%;
   text-align: center;
